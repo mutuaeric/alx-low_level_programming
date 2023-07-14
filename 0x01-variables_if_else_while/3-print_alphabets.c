@@ -4,23 +4,24 @@
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char c, d;
+
 	c = 'a';
 	d = 'A';
-	while 
+	while
 		(c <= 'z')
 		{
 			putchar(c);
 			c++;
 		}
-	while  
+	while
 		(d <= 'Z')
-                {       
-                        putchar(d);
-                        d++;
-                }  
+		{
+			putchar(d);
+			d++;
+		}
 	putchar('\n');
 	return (0);
-}	
+}
