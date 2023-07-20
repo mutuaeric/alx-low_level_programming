@@ -1,1 +1,1 @@
-This folder helps to practice debugging
+This is debugging training class
