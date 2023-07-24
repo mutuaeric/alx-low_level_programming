@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int c = 0, m = 0, i = 0;
+	int c = 0, m = 1, i = 0;
 	unsigned int n = 0;
 
 	while (s[c])
@@ -18,7 +18,7 @@ int _atoi(char *s)
 	while (s[c] >= 48 && s[c] <= 57)
 	{
 		i = 1;
-		n = (n * 10) + (s[c] - '0');
+		n = (n * 10) + (s[c] - '\0');
 		c++;
 	}
 	if (i == 1)
