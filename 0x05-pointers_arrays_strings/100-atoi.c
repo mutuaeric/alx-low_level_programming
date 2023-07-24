@@ -10,7 +10,7 @@ int _atoi(char *s)
 	unsigned int n = 0;
 
 	do {
-		if (*s == '_')
+		if (*s == '-')
 			c *= -1;
 		else if (*s >= '0' && *s <= '9')
 			n = (n * 10) + (*s - '0');
