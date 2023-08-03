@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
  * wildcmp - compares two strings
@@ -19,7 +19,7 @@ int wildcmp(char *s1, char *s2)
 	}
 	if (*s2 == '*')
 	{
-		return (wildcmp(s1 + 1, s2) || wildcap(s1, s2 + 1));
+		return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
 	}
 	else if (*s1 == *s2)
 	{
@@ -27,4 +27,3 @@ int wildcmp(char *s1, char *s2)
 	}
 	return (0);
 }
-
