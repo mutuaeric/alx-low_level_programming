@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * string_nconcat - concatenates two strings
  * @s1: pointer to s1
@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (l2 = 0; s2[l2] != '\0'; l2++)
 		;
 	str = malloc(l1 + n + 1);
-	if (str == Null)
+	if (str == NULL)
 	{
 		return (NULL);
 	}

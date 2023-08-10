@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _realloc - allocate memmory block using malloc and free
  * @ptr: pointer
@@ -30,8 +31,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		p = malloc(new_size);
 		if (p == NULL)
 			return (NULL);
-		for (a = 0; old_size && i < new_size; i++)
-			*((char *)p + i) = *((char *)ptr + i);
+		for (a = 0; old_size && a < new_size; a++)
+			*((char *)p + a) = *((char *)ptr + a);
 		free(ptr);
 	}
 	return (p);
