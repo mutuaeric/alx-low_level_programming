@@ -1,5 +1,3 @@
-6-cap_string.c
-
 #include "main.h"
 
 /**
